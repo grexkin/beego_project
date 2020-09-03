@@ -6,8 +6,30 @@
   <title>UserList</title>
 </head>
 <body>
+
   用户列表
-  <p>用户名 {{ .Username }}</p>
-  <p>年龄： {{ .Age }}</p>
+  <p>ID: {{ .user.ID }}</p>
+  <p>用户名 {{ .user.UserName }}</p>
+  <p>年龄： {{ .user.Age }}</p>
+  循环数组
+  <p>{{ range .arrays}}</p>
+  <p>{{ . }}</p>
+  <p>{{ end }}</p>
+  <br>
+  <p>{{ range $k,$v := .arrays }}</p>
+  <p>{{ $k }}: {{ $v}}</p>
+  <p>{{ end }}</p>
+  <br>
+  数组结构体
+  <p>{{ range .arr_struct }}</p>
+  <p>{{ .ID }}-{{ .UserName }}-{{ .Age }}</p>
+  <p>{{ end }}</p>
+  <br>
+  数组结构体2
+  {{/* 区角标$i  */}}
+  {{/*  <p>{{ range $i,$v := .arr_struct }}</p>*/}}
+  <p>{{ range $v := .arr_struct }}</p>
+  <p>{{ $v.ID }}-{{ $v.UserName}}-{{ $v.Age }}</p>
+  <p>{{ end }}</p>
 </body>
 </html>

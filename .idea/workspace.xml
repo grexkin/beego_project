@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="267c9846-bc88-47f3-aafa-c9e7da1b2b7f" name="Default Changelist" comment="" />
+    <list default="true" id="267c9846-bc88-47f3-aafa-c9e7da1b2b7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/arr_struct/arr_str.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testarray/testArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/teststruct/structs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/user.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1gyw26ZeQ6JlrV9D2YXeD7bhizD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -26,19 +52,36 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/front" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build beego_project/tests/teststruct" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="beego_project" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/tests/teststruct/structs.go" />
+      <package value="beego_project/tests/teststruct" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build beego_project/tests/teststruct" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <environment>
-      <map>
-        <entry key="GOPROXY" value="https://goproxy.cn" />
-      </map>
-    </environment>
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
@@ -46,9 +89,34 @@
       <screen x="51" y="23" width="1629" height="1027" />
     </state>
     <state x="405" y="171" key="#Go_Modules_(vgo)/1680.-56.1920.1057/51.23.1629.1027@51.23.1629.1027" timestamp="1599099941740" />
-    <state x="385" y="311" key="SettingsEditor" timestamp="1599100880598">
-      <screen x="51" y="23" width="1629" height="1027" />
+    <state width="946" height="172" key="GridCell.Tab.0.bottom" timestamp="1599148524512">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state width="946" height="172" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524512" />
+    <state width="946" height="172" key="GridCell.Tab.0.center" timestamp="1599148524512">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="946" height="172" key="GridCell.Tab.0.center/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524512" />
+    <state width="946" height="172" key="GridCell.Tab.0.left" timestamp="1599148524511">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="946" height="172" key="GridCell.Tab.0.left/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524511" />
+    <state width="946" height="172" key="GridCell.Tab.0.right" timestamp="1599148524512">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="946" height="172" key="GridCell.Tab.0.right/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524512" />
+    <state x="376" y="311" key="SettingsEditor" timestamp="1599123000035">
+      <screen x="40" y="23" width="1640" height="1027" />
+    </state>
+    <state x="376" y="311" key="SettingsEditor/1680.-56.1920.1057/40.23.1640.1027@40.23.1640.1027" timestamp="1599123000035" />
     <state x="385" y="311" key="SettingsEditor/1680.-56.1920.1057/51.23.1629.1027@51.23.1629.1027" timestamp="1599100880598" />
+    <state x="232" y="249" width="788" height="523" key="dock-window-1" timestamp="1599147930579">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="232" y="249" width="788" height="523" key="dock-window-1/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599147930579" />
+    <state x="232" y="249" width="788" height="523" key="dock-window-2" timestamp="1599147930580">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="232" y="249" width="788" height="523" key="dock-window-2/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599147930580" />
   </component>
 </project>

@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
+	//beego.SetViewsPath("front")
 	beego.Run()
 }
-

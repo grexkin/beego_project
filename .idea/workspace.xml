@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="267c9846-bc88-47f3-aafa-c9e7da1b2b7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/arr_struct/arr_str.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/testarray/testArray.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/teststruct/structs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/user.html" afterDir="false" />
-    </list>
+    <list default="true" id="267c9846-bc88-47f3-aafa-c9e7da1b2b7f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

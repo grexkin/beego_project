@@ -31,5 +31,35 @@
   <p>{{ range $v := .arr_struct }}</p>
   <p>{{ $v.ID }}-{{ $v.UserName}}-{{ $v.Age }}</p>
   <p>{{ end }}</p>
+  <br>
+  字典渲染
+  <p>{{ .maps }}</p>
+  <p>{{ .maps.name }}-{{ .maps.age }}</p>
+  字典遍历
+  <br>
+  <p>{{range .maps}}</p>
+  <p>{{ . }}</p>
+  <p>{{ end}}</p>
+  字典遍历2
+  <p>{{range $k,$v := .maps}}</p>
+{{/*  <p>{{ $v.name }}-{{ $v.age}}</p>*/}}
+  <p>{{ $k }} - {{ $v}}</p>
+  <p>{{ end }}</p>
+  <br>
+  字典结构体
+{{/*  <p>{{ .map_struct.1.ID}}-{{ .map_struct.1.UserName}}-{{ .map_struct.1.Age}}</p>*/}}
+{{/*  <p>{{ .map_struct.2.ID}}-{{ .map_struct.2.UserName}}-{{ .map_struct.2.Age}}</p>*/}}
+  <p>{{range $k,$v := .map_struct }}</p>
+  {{ $k }}-{{$v.UserName}}-{{ $v.Age }}-{{ $v.ID }}
+  <p>{{ end}}</p>
+  <br>
+  切片渲染
+  <p>{{range .slices}}</p>
+  <p>{{ . }}</p>
+  <p>{{end}}</p>
+  <br>
+  <p>{{range $v := .slices }}</p>
+  <p>{{ $v }}</p>
+  <p>{{ end }}</p>
 </body>
 </html>

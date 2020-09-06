@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="267c9846-bc88-47f3-aafa-c9e7da1b2b7f" name="Default Changelist" comment="" />
+    <list default="true" id="267c9846-bc88-47f3-aafa-c9e7da1b2b7f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/static_test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/imag.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/static_test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/map_demo/map_demo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/map_struct/map_struct.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/slice_type/slice_type.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/param_test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/static_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beego_project" beforeDir="false" afterPath="$PROJECT_DIR$/beego_project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/user.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +26,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Go File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,10 +60,15 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front" />
+      <recent name="$PROJECT_DIR$/static/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/front" />
@@ -80,22 +103,22 @@
       <screen x="51" y="23" width="1629" height="1027" />
     </state>
     <state x="405" y="171" key="#Go_Modules_(vgo)/1680.-56.1920.1057/51.23.1629.1027@51.23.1629.1027" timestamp="1599099941740" />
-    <state width="946" height="172" key="GridCell.Tab.0.bottom" timestamp="1599148524512">
+    <state width="946" height="172" key="GridCell.Tab.0.bottom" timestamp="1599398882205">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="946" height="172" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524512" />
-    <state width="946" height="172" key="GridCell.Tab.0.center" timestamp="1599148524512">
+    <state width="946" height="172" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882205" />
+    <state width="946" height="172" key="GridCell.Tab.0.center" timestamp="1599398882203">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="946" height="172" key="GridCell.Tab.0.center/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524512" />
-    <state width="946" height="172" key="GridCell.Tab.0.left" timestamp="1599148524511">
+    <state width="946" height="172" key="GridCell.Tab.0.center/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882203" />
+    <state width="946" height="172" key="GridCell.Tab.0.left" timestamp="1599398882203">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="946" height="172" key="GridCell.Tab.0.left/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524511" />
-    <state width="946" height="172" key="GridCell.Tab.0.right" timestamp="1599148524512">
+    <state width="946" height="172" key="GridCell.Tab.0.left/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882203" />
+    <state width="946" height="172" key="GridCell.Tab.0.right" timestamp="1599398882204">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="946" height="172" key="GridCell.Tab.0.right/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599148524512" />
+    <state width="946" height="172" key="GridCell.Tab.0.right/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882204" />
     <state x="376" y="311" key="SettingsEditor" timestamp="1599123000035">
       <screen x="40" y="23" width="1640" height="1027" />
     </state>

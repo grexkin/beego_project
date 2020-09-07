@@ -25,8 +25,8 @@ type ParamsController struct {
 
 type UserStruct struct {
 	ID       int
-	UserName string
-	Age      int
+	UserName string   `form:"username"`
+	Age      int	  `form:"age"`
 }
 
 func (u *UserController) Get() {
@@ -92,4 +92,38 @@ func (p *ParamsController)Get()  {
 	id2 := p.GetString(":id") 
 	fmt.Println("====id2",id2)
 	p.TplName = "param_test.html"
+}
+
+func (p *ParamsController)Post()  {
+	//获取前端返回的数据
+	//第一种方式
+	/*
+	username := p.GetString("username")
+	usernames := p.GetStrings("username")  //获取到所有的username，组成slice
+	fmt.Println(username)
+	fmt.Println(usernames)
+	age := p.GetString("age")
+	fmt.Println(username,age)
+	//第二种方式
+	username1 := p.Input().Get("username")
+	age1 := p.Input().Get("age")
+	fmt.Println(username1,age1)
+	//第三种方式: url需要配置，所以不可能获取到数据
+	//p.Ctx.Input.Param("username")
+	//获取其他数据类型
+	age2,_ := p.GetInt64("age")
+	price,_ := p.GetFloat("price")
+	is_true,_ := p.GetBool("is_true")
+	fmt.Println(username,age2,price,is_true)
+	 */
+	//第三种获取form表单的方式
+	user := UserStruct{}
+	err := p.ParseForm(&user)
+	fmt.Println(err)
+
+	if err == nil {
+		fmt.Println(&user)
+	}
+
+	p.TplName = "success.html"
 }

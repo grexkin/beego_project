@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego"
 )
@@ -20,6 +21,16 @@ type StaticController struct {
 
 //从前端传参到后端
 type ParamsController struct {
+	beego.Controller
+}
+
+//其他数据格式
+type OtherTypeDataController struct {
+	beego.Controller
+}
+
+//Flash数据
+type FlashController struct {
 	beego.Controller
 }
 
@@ -117,6 +128,7 @@ func (p *ParamsController)Post()  {
 	fmt.Println(username,age2,price,is_true)
 	 */
 	//第三种获取form表单的方式
+	/*
 	user := UserStruct{}
 	err := p.ParseForm(&user)
 	fmt.Println(err)
@@ -124,6 +136,74 @@ func (p *ParamsController)Post()  {
 	if err == nil {
 		fmt.Println(&user)
 	}
-
 	p.TplName = "success.html"
+	 */
+	//获取ajax数据
+	body := p.Ctx.Input.RequestBody    //二进制数据
+	user := UserStruct{}
+	json.Unmarshal(body,&user)
+	fmt.Println(user)
+	result := map[string]string{"code":"200","message":"处理成功"}
+	p.Data["json"] = result
+	p.ServeJSON()   //返回json格式
+}
+
+func (o *OtherTypeDataController)Get()  {
+	user := UserStruct{ID: 1,UserName: "abcd",Age: 18}
+	// json 格式传输
+	/*
+	o.Data["json"] = &user
+	o.ServeJSON()
+	 */
+	/* xml 格式
+	o.Data["xml"] = &user
+	o.ServeXML()
+	 */
+	/* jsonp 格式
+	o.Data["jsonp"] = &user
+	o.ServeJSONP()
+	 */
+	o.Data["yaml"] = &user
+	o.ServeYAML()
+}
+
+//flash controller
+func (f *FlashController)Get()  {
+	flash := beego.ReadFromRequest(&f.Controller)
+	notice := flash.Data["notice"]
+	err := flash.Data["error"]
+	fmt.Println("===")
+	fmt.Println(err)
+	if len(notice) != 0 {}
+	if len(err) != 0 {
+		f.TplName = "error.html"
+	}else if len(notice) != 0{
+		f.TplName = "success.html"
+	} else {
+		f.TplName = "flash.html"
+	}
+}
+
+func (f *FlashController)Post()  {
+	flash := beego.NewFlash()   //初始化flash
+	username := f.GetString("username")
+	pwd := f.GetString("pwd")
+	fmt.Println(username)
+	fmt.Println(pwd)
+	if len(username) == 0 {
+		fmt.Println("用户名不能为空")
+		flash.Error("用户名不能为空！！")
+		flash.Store(&f.Controller)
+		f.Redirect("/flash_data",302)
+	}else if pwd != "123456"{
+		fmt.Println("密码错误")
+		flash.Error("密码错误")
+		flash.Store(&f.Controller)
+		f.Redirect("/flash_data",302)
+	}else {
+		flash.Notice("成功")
+		flash.Store(&f.Controller)
+		f.Redirect("/flash_data",302)
+	}
+
 }

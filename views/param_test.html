@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>param_test</title>
+    <script src="/static/js/jquery.min.js"></script>
 </head>
 <body>
 <h1>参数传递页面</h1>
-<form action="/params" method="post">
-    用户名： <input type="text" name="username"><br>
+{{/*<form action="/params" method="post">*/}}
+<form>
+    用户名： <input type="text" name="username" id="username"><br>
 {{/*    用户名1： <input type="text" name="username"><br>*/}}
-    年&nbsp&nbsp&nbsp龄： <input type="text" name="age"><br>
+    年&nbsp&nbsp&nbsp龄： <input type="text" name="age" id="age"><br>
 {{/*    价&nbsp&nbsp&nbsp格：<input type="text" name="price"><br>*/}}
 {{/*    是： <input type="radio" name="is_true" value="true">*/}}
 {{/*    否： <input type="radio" name="is_true" value="fasle"><br>*/}}
-    <input type="submit" value="提交">
+{{/*    <input type="submit" value="提交">*/}}
+    <input type="button" value="提交" id="btn">
 </form>
+<script>
+    var btn = document.getElementById("btn");
+    btn.onclick = function (ev) {
+        var username = document.getElementById("username").value;
+        var age = document.getElementById("age").value;
+        alert(username)
+        alert(age)
+        $.ajax({
+            url: "/params",
+            type: "POST",
+            data: JSON.stringify({
+                "username": username,
+                "age": Number(age)
+            }),
+            dataType:"JSON",
+            success: function (data) {
+                var code = data["code"]
+                var message = data["message"]
+                if(code == "200") {
+                    alert(message)
+                }
+            },
+            error: function (data) {
+                alert("处理异常")
+            }
+        })
+    }
+</script>
 </body>
 </html>

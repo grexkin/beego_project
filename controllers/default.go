@@ -33,6 +33,10 @@ type OtherTypeDataController struct {
 type FlashController struct {
 	beego.Controller
 }
+//Flash Ajax数据校验
+type FlashAjaxController struct {
+	beego.Controller
+}
 
 type UserStruct struct {
 	ID       int
@@ -205,5 +209,48 @@ func (f *FlashController)Post()  {
 		flash.Store(&f.Controller)
 		f.Redirect("/flash_data",302)
 	}
+}
 
+func (fa *FlashAjaxController)Get()  {
+	flash := beego.ReadFromRequest(&fa.Controller)
+	notice := flash.Data["notice"]
+	err := flash.Data["error"]
+	fmt.Println("===")
+	fmt.Println(err)
+	if len(notice) != 0 {}
+	if len(err) != 0 {
+		fa.TplName = "error.html"
+	}else if len(notice) != 0{
+		fa.TplName = "success.html"
+	} else {
+		fa.TplName = "ajax_flash.html"
+	}
+}
+
+func (fa *FlashAjaxController)Post()  {
+	flash := beego.NewFlash()           //初始化flash
+	body := fa.Ctx.Input.RequestBody      //二进制数据
+	user := UserStruct{}
+	json.Unmarshal(body,&user)
+	username := user.UserName
+	age := user.Age
+	fmt.Println("===***===")
+	fmt.Println(user)
+	fmt.Println(username)
+	fmt.Println(age)
+	if len(username) == 0 {
+		fmt.Println("用户名不能为空")
+		flash.Error("用户名不能为空！！")
+		flash.Store(&fa.Controller)
+		fa.Redirect("/flash_ajax",302)
+	}else if age != 12{
+		fmt.Println("年龄错误")
+		flash.Error("年龄错误")
+		flash.Store(&fa.Controller)
+		fa.Redirect("/flash_ajax",302)
+	}else {
+		flash.Notice("成功")
+		flash.Store(&fa.Controller)
+		fa.Redirect("/flash_ajax",302)
+	}
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax_flash</title>
+</head>
+<body>
+<h1>Ajax Flash</h1>
+<form>
+    用户名：<input type="text" name="username"><br>
+    年龄： <input type="text" name="age"><br>
+    <input type="button" value="提交" name="btn">
+</form>
+
+<script>
+    var btn = document.getElementById("btn");
+    btn.onclick = function (ev) {
+        var username = document.getElementById("username").value;
+        var age = document.getElementById("age").value;
+        alert(username)
+        alert(age)
+        $.ajax({
+            url: "/flash_ajax",
+            type: "POST",
+            data: JSON.stringify({
+                "username": username,
+                "age": Number(age)
+            }),
+            dataType:"JSON",
+            success: function (data) {
+                var code = data["code"]
+                var message = data["message"]
+                if(code == "200") {
+                    alert(message)
+                }
+            },
+            error: function (data) {
+                alert("处理异常")
+            }
+        })
+    }
+</script>
+</body>
+</html>

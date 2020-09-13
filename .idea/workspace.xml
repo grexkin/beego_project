@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="267c9846-bc88-47f3-aafa-c9e7da1b2b7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/flash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="12ce117e-2600-454f-b27b-9989b52bad1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/conf/mysql.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/router_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/test_upload.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/test_xsrf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/ajax_flash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/test_router.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/test_router_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/test_upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/test_xsrf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/beego_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beego_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/param_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/param_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +31,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -37,8 +42,8 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectId" id="1gyw26ZeQ6JlrV9D2YXeD7bhizD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1hGzOXB3osM1FZGkTLWzYH66YsU" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -49,44 +54,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/views" />
-      <recent name="$PROJECT_DIR$/front" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/front" />
-      <recent name="$PROJECT_DIR$/static/img" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="go build beego_project/tests/teststruct" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="beego_project" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/tests/teststruct/structs.go" />
-      <package value="beego_project/tests/teststruct" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build beego_project/tests/teststruct" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,58 +67,11 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <environment>
-      <map>
-        <entry key="GOPROXY" value="https://goproxy.cn" />
-      </map>
-    </environment>
-    <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="405" y="171" key="#Go_Modules_(vgo)" timestamp="1599099941740">
+    <state x="822" y="374" width="670" height="676" key="search.everywhere.popup" timestamp="1599903981635">
       <screen x="51" y="23" width="1629" height="1027" />
     </state>
-    <state x="405" y="171" key="#Go_Modules_(vgo)/1680.-56.1920.1057/51.23.1629.1027@51.23.1629.1027" timestamp="1599099941740" />
-    <state x="348" y="429" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599490618268">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="348" y="429" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599490618268" />
-    <state width="946" height="172" key="GridCell.Tab.0.bottom" timestamp="1599409863086">
-      <screen x="-1869" y="23" width="1869" height="1057" />
-    </state>
-    <state width="946" height="172" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1869.23.1869.1057@-1869.23.1869.1057" timestamp="1599409863086" />
-    <state width="946" height="172" key="GridCell.Tab.0.bottom/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882205" />
-    <state width="946" height="172" key="GridCell.Tab.0.center" timestamp="1599409863086">
-      <screen x="-1869" y="23" width="1869" height="1057" />
-    </state>
-    <state width="946" height="172" key="GridCell.Tab.0.center/0.23.1680.1027/-1869.23.1869.1057@-1869.23.1869.1057" timestamp="1599409863086" />
-    <state width="946" height="172" key="GridCell.Tab.0.center/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882203" />
-    <state width="946" height="172" key="GridCell.Tab.0.left" timestamp="1599409863085">
-      <screen x="-1869" y="23" width="1869" height="1057" />
-    </state>
-    <state width="946" height="172" key="GridCell.Tab.0.left/0.23.1680.1027/-1869.23.1869.1057@-1869.23.1869.1057" timestamp="1599409863085" />
-    <state width="946" height="172" key="GridCell.Tab.0.left/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882203" />
-    <state width="946" height="172" key="GridCell.Tab.0.right" timestamp="1599409863086">
-      <screen x="-1869" y="23" width="1869" height="1057" />
-    </state>
-    <state width="946" height="172" key="GridCell.Tab.0.right/0.23.1680.1027/-1869.23.1869.1057@-1869.23.1869.1057" timestamp="1599409863086" />
-    <state width="946" height="172" key="GridCell.Tab.0.right/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599398882204" />
-    <state x="376" y="311" key="SettingsEditor" timestamp="1599123000035">
-      <screen x="40" y="23" width="1640" height="1027" />
-    </state>
-    <state x="376" y="311" key="SettingsEditor/1680.-56.1920.1057/40.23.1640.1027@40.23.1640.1027" timestamp="1599123000035" />
-    <state x="385" y="311" key="SettingsEditor/1680.-56.1920.1057/51.23.1629.1027@51.23.1629.1027" timestamp="1599100880598" />
-    <state x="232" y="249" width="788" height="523" key="dock-window-1" timestamp="1599147930579">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="232" y="249" width="788" height="523" key="dock-window-1/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599147930579" />
-    <state x="232" y="249" width="788" height="523" key="dock-window-2" timestamp="1599147930580">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="232" y="249" width="788" height="523" key="dock-window-2/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599147930580" />
-    <state x="408" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1599492498291">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="408" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/-1869.23.1869.1057@0.23.1680.1027" timestamp="1599492498291" />
+    <state x="822" y="374" width="670" height="676" key="search.everywhere.popup/1680.-56.1920.1057/51.23.1629.1027@51.23.1629.1027" timestamp="1599903981635" />
   </component>
 </project>

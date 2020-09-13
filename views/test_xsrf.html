@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test_xsrf</title>
+</head>
+<body>
+<h1>test_xsrf</h1>
+<form action="/test_xsrf" method="post">
+    {{ .xsrfdata }}
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

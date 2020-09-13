@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testUpload</title>
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+<h1>testUpload</h1>
+{{/*form 文件上传*/}}
+{{/*<form action="/test_upload" method="post" enctype="multipart/form-data">*/}}
+{{/*    <input type="file" name="upload_file"><br>*/}}
+{{/*    <input type="submit" value="提交">*/}}
+{{/*</form>*/}}
+
+{{/* Ajax 文件上传 */}}
+<form>
+    <input type="file" name="upload_file" id="upload_file"><br>
+    <input type="button" value="提交" id="btn">
+</form>
+<script>
+    var btn = document.getElementById("btn")
+    btn.onclick = function (ev){
+        var formData = new FormData();
+        formData.append("upload_file",$("#upload_file")[0].files[0])   //获取文件
+        $.ajax({
+            url: "/test_upload",
+            type: "POST",
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (data){
+                if (data["code"] == "200") {
+                    alert(data["message"])
+                }
+            },
+            error: function (data){
+                alert(data["message"])
+            },
+        })
+    }
+</script>
+</body>
+</html>
